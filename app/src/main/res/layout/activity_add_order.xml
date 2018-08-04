@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".dashboard.addorder.AddOrderForCustomerActivity">
+
+
+
+
+    <LinearLayout
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="0dp"
+            android:layout_margin="@dimen/_16sdp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_16sdp">
+
+                <TextView
+                    android:textStyle="normal"
+                    android:text="Customer Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/product_item_space"/>
+                <RelativeLayout
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:background="@drawable/round_rect_border_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/customer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/product_item_space"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textStyle="normal"
+                    android:text="Delivery Date"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/product_item_space"/>
+                <RelativeLayout
+
+                    android:background="@drawable/round_rect_border_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:paddingTop="@dimen/_12sdp"
+                    android:paddingBottom="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:id="@+id/delivery_date"
+                    android:hint="Choose date"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/product_item_space"/>
+
+                <TextView
+                    android:textStyle="normal"
+                    android:text="Business Category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/product_item_space"/>
+                <RelativeLayout
+                    android:paddingTop="@dimen/_12sdp"
+                    android:paddingBottom="@dimen/_12sdp"
+                    android:background="@drawable/round_rect_border_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/business_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TableRow
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_16sdp">
+
+                <Button
+                    android:background="@drawable/gradient_round_btn_view"
+                    android:id="@+id/add_product_to_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:paddingLeft="@dimen/_18sdp"
+                    android:paddingRight="@dimen/_18sdp"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="Add Product To Order"
+                    />
+
+            </TableRow>
+
+        </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/product_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textSize="@dimen/_18ssp"
+                    android:gravity="center"
+                    android:text="Added Products List"
+                    android:textColor="@color/btnstartColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:background="@color/btnstartColor"
+                    android:layout_width="30dp"
+                    android:layout_height="2dp"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/total_anmount"
+                    android:textSize="@dimen/_14ssp"
+                    android:gravity="center"
+                    android:text="Total Amount is: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.digitfellas.ac.customview.CustomMessageView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:id="@+id/product_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:layout_marginTop="@dimen/_5sdp"-->
+                <!--android:paddingBottom="@dimen/_16sdp"-->
+                <!--android:visibility="visible"-->
+                <!--android:clipToPadding="false"-->
+                <!--android:id="@+id/product_list"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"/>-->
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

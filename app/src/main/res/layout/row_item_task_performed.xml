@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/_10sdp">
+
+
+    <CheckBox
+        android:id="@+id/task"
+        android:buttonTint="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create order" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/task_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/round_rect_border_line"
+        android:minHeight="@dimen/_40sdp"
+        android:padding="@dimen/_5sdp" />
+
+</LinearLayout>

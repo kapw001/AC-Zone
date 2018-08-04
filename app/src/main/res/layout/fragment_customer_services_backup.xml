@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard.customerservices.PostServicesRequestFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile No"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_rect_border_line"
+            android:gravity="center|start"
+            android:hint="Mobile No"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customer Email"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_rect_border_line"
+            android:gravity="center|start"
+            android:hint="Customer Email"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address 1"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_rect_border_line"
+            android:gravity="center|start"
+            android:hint="Address 1"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address 2"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_rect_border_line"
+            android:gravity="center|start"
+            android:hint="Address 2"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="City/Town"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_rect_border_line"
+            android:gravity="center|start"
+            android:hint="City/Town"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="State"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_rect_border_line"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp">
+
+            <Spinner
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/product" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zipcode"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_rect_border_line"
+            android:gravity="center|start"
+            android:hint="Zipcode"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Brand Name"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_rect_border_line"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp">
+
+            <Spinner
+                android:id="@+id/brand_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/product"
+                android:textSize="@dimen/_12ssp" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Model Name"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_rect_border_line"
+            android:gravity="center|start"
+            android:hint="Model Name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ton/Capacity"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_rect_border_line"
+            android:gravity="center|start"
+            android:hint="Ton/Capacity"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Problem Type"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_rect_border_line"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp">
+
+            <Spinner
+                android:id="@+id/problem_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/product" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Where is it placed at home?"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_rect_border_line"
+            android:gravity="center|start"
+            android:hint="Where is it placed at home?"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preferred Time of Service"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_rect_border_line"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp">
+
+            <Spinner
+                android:id="@+id/preferred_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/product" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preferred Date of Service"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_rect_border_line"
+            android:gravity="center|start"
+            android:hint="Preferred Date of Service"
+            android:imeOptions="actionNext"
+            android:inputType="date"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comments"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/round_rect_border_line"
+            android:gravity="start"
+            android:hint="Preferred Date of Service"
+            android:imeOptions="actionDone|actionSend"
+            android:inputType="textMultiLine|text"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space" />
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

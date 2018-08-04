@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    android:layout_marginLeft="@dimen/_16sdp"
+    android:layout_marginRight="@dimen/_16sdp"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:layout_marginBottom="@dimen/_8sdp"
+    app:contentPadding="@dimen/_10sdp"
+    app:cardCornerRadius="0dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+
+        >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:text="Product"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_weight="1"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:text="SKU"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/sku"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:text="Price"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/price"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:text="Quantity"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/quantity"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:text="Sub Total"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/sub_total"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/edit"
+            android:visibility="visible"
+            android:tint="@android:color/holo_green_light"
+            android:background="@null"
+            android:src="@drawable/ic_edit_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:visibility="gone"
+            android:layout_width="@dimen/_5sdp"
+            android:layout_height="match_parent"/>
+
+        <ImageButton
+            android:id="@+id/delete_product"
+            android:tint="@android:color/holo_red_light"
+            android:background="@null"
+            android:src="@drawable/ic_delete_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

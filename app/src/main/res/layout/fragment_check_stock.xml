@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".dashboard.checkstock.CheckStockFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_16sdp">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/product_item_space"/>
+
+    <TextView
+        android:textStyle="normal"
+        android:text="Product or SKU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/product_item_space"/>
+
+
+    <LinearLayout
+        android:background="@drawable/round_rect_border_line"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/_5sdp"
+            android:id="@+id/product_sku_search"
+            android:background="@null"
+            android:hint="Search product or sku"
+            android:textSize="@dimen/_12ssp"
+            android:gravity="center|start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <ImageButton
+            android:id="@+id/product_search"
+            android:tint="@color/white"
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/gradient_btn_view"
+            android:src="@drawable/ic_search_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/layout_stock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space"/>
+
+        <TextView
+            android:textStyle="normal"
+            android:text="Product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space"/>
+
+        <TextView
+            android:background="@drawable/round_rect_border_line"
+            android:id="@+id/product"
+            android:text="MI Cover 3S Prime"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space"/>
+
+        <TextView
+            android:textStyle="normal"
+            android:text="SKU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space"/>
+
+        <TextView
+            android:background="@drawable/round_rect_border_line"
+            android:id="@+id/sku"
+            android:text="SKU"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space"/>
+
+        <TextView
+            android:textStyle="normal"
+            android:text="Stock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space"/>
+
+        <TextView
+            android:background="@drawable/round_rect_border_line"
+            android:id="@+id/stock"
+            android:text="Stock"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_12sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+        <TextView
+
+            android:id="@+id/msg"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:textAlignment="center"
+            android:text="Find the product to see their details"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".dashboard.addproduct.AddProductActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_margin="@dimen/_16sdp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space"/>
+
+        <TextView
+            android:textStyle="normal"
+            android:text="Product Category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space"/>
+
+        <RelativeLayout
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:background="@drawable/round_rect_border_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/product_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space"/>
+
+        <TextView
+            android:textStyle="normal"
+            android:text="Brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space"/>
+        <RelativeLayout
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:background="@drawable/round_rect_border_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space"/>
+
+        <TextView
+            android:textStyle="normal"
+            android:text="Product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_item_space"/>
+
+
+        <LinearLayout
+            android:background="@drawable/round_rect_border_line"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+            android:id="@+id/product_search"
+                android:gravity="center|start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+                android:hint="Product search"
+                android:paddingLeft="@dimen/_5sdp"
+            />
+
+            <ImageButton
+                android:id="@+id/get_product_info"
+                android:tint="@color/white"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/gradient_btn_view"
+                android:src="@drawable/ic_search_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!-- sku valus layout  -->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/layout_product_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/product_item_space"/>
+
+            <TextView
+                android:textStyle="normal"
+                android:text="Sku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/product_item_space"/>
+
+            <TextView
+                android:background="@drawable/round_rect_border_line_bg_color"
+                android:id="@+id/sku"
+                android:text=""
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/product_item_space"/>
+
+            <TextView
+                android:textStyle="normal"
+                android:text="Model Number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/product_item_space"/>
+
+            <TextView
+                android:background="@drawable/round_rect_border_line_bg_color"
+                android:id="@+id/model_number"
+                android:text=""
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/product_item_space"/>
+
+            <TextView
+                android:textStyle="normal"
+                android:text="Price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/product_item_space"/>
+
+            <TextView
+                android:background="@drawable/round_rect_border_line_bg_color"
+                android:id="@+id/price"
+                android:text=""
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/product_item_space"/>
+
+            <TextView
+                android:textStyle="normal"
+                android:text="Dealer Price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/product_item_space"/>
+
+            <TextView
+                android:background="@drawable/round_rect_border_line_bg_color"
+                android:id="@+id/dealer_price"
+                android:text=""
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/product_item_space"/>
+
+            <TextView
+                android:textStyle="normal"
+                android:text="Quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/product_item_space"/>
+
+            <com.digitfellas.ac.customview.ProductQuantity
+                android:background="@drawable/round_rect_border_line"
+                android:id="@+id/quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/product_item_space"/>
+
+            <TextView
+                android:textStyle="normal"
+                android:text="Sub Total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/product_item_space"/>
+
+            <TextView
+                android:background="@drawable/round_rect_border_line_bg_color"
+                android:id="@+id/subtotal"
+                android:text="0"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">AC Zone</string>
+    <string name="login_now">Login Now!</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="terms"><![CDATA[By signing up, you agree to the<br><a href="https://www.google.com" style="color:#2193b0"/>Terms & Conditions</a> and <a href="https://go.test.com" style="color:#2193b0"/>Privacy Policy</a>]]></string>
+    <string name="by_continuing_str2"><![CDATA[By continuing to use this app, you agree to our <a href="https://go.test.com" style="color:gray"/> Privacy Statement </a> and <a href="https://go.test.com" style="color:gray"/>Services Agreement.]]></string>
+    <string name="signup">Signup</string>
+    <string name="signup_now">Signup Now!</string>
+
+
+    <array name="customer_name">
+        <item>Test</item>
+        <item>Test2</item>
+        <item>Test3</item>
+        <item>Test4</item>
+        <item>Test5</item>
+    </array>
+
+
+    <array name="business_category">
+        <item>Mobile</item>
+        <item>AC</item>
+    </array>
+
+    <array name="product_category">
+        <item>Choose product category</item>
+        <item>AC Fan</item>
+        <item>AC Bolt</item>
+    </array>
+
+    <array name="brand">
+        <item>Choose brand</item>
+        <item>AC Brand</item>
+    </array>
+    <array name="product">
+        <item>Choose product</item>
+        <item>AC repair</item>
+    </array>
+
+    <!-- Validation msg -->
+
+    <string name="emailempty">Please enter email</string>
+    <string name="emailnotvalid">Please enter valid email</string>
+    <string name="mobileempty">Please enter number</string>
+    <string name="addressempty">Please address number</string>
+    <string name="mobile_must_be">The number must be 10 digits</string>
+    <string name="fullnameempty">Please enter full name</string>
+    <string name="passwordempty">Please enter password</string>
+    <string name="passwordmustbe">The password must be at least 6 characters.</string>
+    <string name="confirm_passwordempty">Please enter confirm password</string>
+    <string name="notmatch">Password and confirm password does not match</string>
+    <string name="new_to_digitfellas">New to AC Zone ?</string>
+    <string name="forgot">Send</string>
+
+    <string name="allfieldsrequired">Please correct the fields in red and try again.</string>
+    <string name="mobile_info">This number will be verified via OTP</string>
+    <string name="title_activity_dealer_dashboard">DealerDashboardActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="anouncement">Announcements</string>
+    <string name="downloads">Downloads</string>
+    <string name="check_stock">Check Stock</string>
+    <string name="my_order">My Orders</string>
+    <string name="add_order">Add Order</string>
+    <string name="logout">Logout</string>
+    <string name="nointernet">There is no internet</string>
+    <string name="location_rationale">Please provide loaction permission to proceed</string>
+    <string name="services">My Services</string>
+    <string name="phone_state_rationale">Please provide permission to get notifications</string>
+
+
+    <string-array name="india_states">
+        <item>Choose state</item>
+        <item>Andaman and Nicobar Islands</item>
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chandigarh</item>
+        <item>Chhattisgarh</item>
+        <item>Dadra and Nagar Haveli</item>
+        <item>Daman and Diu</item>
+        <item>Delhi</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Lakshadweep</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Orissa</item>
+        <item>Pondicherry</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttaranchal</item>
+        <item>Uttar Pradesh</item>
+        <item>West Bengal</item>
+    </string-array>
+
+
+</resources>
